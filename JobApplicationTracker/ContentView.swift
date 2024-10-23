@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        NavigationStack {
         VStack {
             VStack {
                 ForEach(0..<2) { _ in
@@ -26,10 +27,11 @@ struct ContentView: View {
                         }
                     }
                 }
-                
             }
             .padding()
+            
             Spacer()
+            
             Section("My applications") {
                 List {
                     ForEach(0..<15) { _ in
@@ -37,8 +39,22 @@ struct ContentView: View {
                     }
                 }
             }
-    }
-
+        }
+        .navigationTitle("Job Applications")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                Button("New Item", systemImage: "gear") {
+                    print("Settings")
+                }
+            }
+            ToolbarItem(placement: .topBarTrailing) {
+                Button("New Item", systemImage: "plus.circle") {
+                    print("New Item")
+                }
+            }
+        }
+        }
     }
 }
 
