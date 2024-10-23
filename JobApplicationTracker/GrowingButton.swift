@@ -11,7 +11,8 @@ import SwiftUI
 struct GrowingButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .padding()
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 10)
             .background(Color(red: 0, green: 0, blue: 0.5))
             .foregroundStyle(.white)
             .clipShape(RoundedRectangle(cornerRadius: 10.0, style: .continuous))

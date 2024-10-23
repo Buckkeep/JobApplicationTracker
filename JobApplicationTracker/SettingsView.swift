@@ -51,6 +51,7 @@ struct SettingsView: View {
             }
             .buttonStyle(GrowingButton())
         }
+        .padding()
     }
 }
 
