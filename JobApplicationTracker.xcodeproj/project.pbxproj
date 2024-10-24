@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C61DC5F52CCA2E550007DB47 /* JobApplications.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61DC5F42CCA2E550007DB47 /* JobApplications.swift */; };
 		C6F4AF9E2CC93CAC0026CE44 /* JobApplicationTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F4AF9D2CC93CAC0026CE44 /* JobApplicationTrackerApp.swift */; };
 		C6F4AFA02CC93CAC0026CE44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F4AF9F2CC93CAC0026CE44 /* ContentView.swift */; };
 		C6F4AFA22CC93CAE0026CE44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6F4AFA12CC93CAE0026CE44 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C61DC5F42CCA2E550007DB47 /* JobApplications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobApplications.swift; sourceTree = "<group>"; };
 		C6F4AF9A2CC93CAC0026CE44 /* JobApplicationTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobApplicationTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F4AF9D2CC93CAC0026CE44 /* JobApplicationTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobApplicationTrackerApp.swift; sourceTree = "<group>"; };
 		C6F4AF9F2CC93CAC0026CE44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				C6F4AF9D2CC93CAC0026CE44 /* JobApplicationTrackerApp.swift */,
 				C6F4AF9F2CC93CAC0026CE44 /* ContentView.swift */,
 				C6F4AFB12CC950840026CE44 /* GrowingButton.swift */,
+				C61DC5F42CCA2E550007DB47 /* JobApplications.swift */,
 				C6F4AFAF2CC9506F0026CE44 /* SettingsView.swift */,
 				C6F4AFA12CC93CAE0026CE44 /* Assets.xcassets */,
 				C6F4AFA32CC93CAE0026CE44 /* Preview Content */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6F4AFB02CC9506F0026CE44 /* SettingsView.swift in Sources */,
+				C61DC5F52CCA2E550007DB47 /* JobApplications.swift in Sources */,
 				C6F4AFA02CC93CAC0026CE44 /* ContentView.swift in Sources */,
 				C6F4AF9E2CC93CAC0026CE44 /* JobApplicationTrackerApp.swift in Sources */,
 				C6F4AFB22CC950840026CE44 /* GrowingButton.swift in Sources */,

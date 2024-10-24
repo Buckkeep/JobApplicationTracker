@@ -32,7 +32,7 @@ struct ContentView: View {
             
             Spacer()
             
-            Section("My applications") {
+            Section("Current applications") {
                 List {
                     ForEach(0..<15) { _ in
                         Text("Zip a dee doo dah")
