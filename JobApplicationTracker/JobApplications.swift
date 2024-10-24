@@ -9,20 +9,20 @@ import Foundation
 
 struct JobApplications {
     enum Status {
-        case wishlist, pending, denied, other
+        case wishlist, pending, denied, offer
     }
     
-    var status: Status
-    var company: String
-    var jobTitle: String
-    var location: String
-    var salary: String
-    var listingURL: String
-    var dateApplied: Date
-    var followedUp: Bool
-    var notes: String
+    var status: Status?
+    var company: String?
+    var jobTitle: String?
+    var location: String?
+    var salary: Int?
+    var listingURL: String?
+    var dateApplied: Date?
+    var followedUp: Bool?
+    var notes: String?
     
-    init(status: Status, company: String, jobTitle: String, location: String, salary: String, listingURL: String, dateApplied: Date, followedUp: Bool, notes: String) {
+    init(status: Status, company: String, jobTitle: String, location: String, salary: Int, listingURL: String, dateApplied: Date, followedUp: Bool, notes: String) {
         self.status = status
         self.company = company
         self.jobTitle = jobTitle
