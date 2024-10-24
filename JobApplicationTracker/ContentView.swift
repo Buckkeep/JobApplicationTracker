@@ -44,13 +44,18 @@ struct ContentView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
-                Button("New Item", systemImage: "gear") {
-                    print("Settings")
+                NavigationLink(destination: SettingsView()) {
+                    Button("New Item", systemImage: "gear") {
+                        print("Settings")
+                    }
                 }
+
             }
             ToolbarItem(placement: .topBarTrailing) {
-                Button("New Item", systemImage: "plus.circle") {
-                    print("New Item")
+                NavigationLink(destination: EditView()) {
+                    Button("New Item", systemImage: "plus.circle") {
+                        print("New Item")
+                    }
                 }
             }
         }
