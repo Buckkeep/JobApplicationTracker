@@ -8,23 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    let statusOptions = JobApplication.Status.allCases
+    let columns = [
+        GridItem(.adaptive(minimum: 150))
+    ]
+    
     var body: some View {
         NavigationStack {
         VStack {
             VStack {
-                ForEach(0..<2) { _ in
-                    HStack {
-                        ForEach(0..<2) { _ in
-                            Button {
-                                print("Button was pressed")
-                            } label: {
-                                Text("Click Me")
-                                    .frame(width: 150, height: 150)
-                                    .background(.red)
-                                    .clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 20)))
-                                    .padding(10)
-                            }
-                        }
+                LazyVGrid(columns: columns) {
+                    ForEach(statusOptions) { item in
+                        Text(item.description)
+                            .frame(width: 150, height: 150)
+                            .background(.red)
+                            .clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 20)))
+                            .padding(10)
                     }
                 }
             }
@@ -66,3 +65,25 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+
+
+//ForEach(0..<2) { _ in
+//    HStack {
+//        ForEach(0..<2) { _ in
+//            Button {
+//                print("\(statusOptions)")
+//            } label: {
+//                ForEach(statusOptions) {
+//                    option in
+//                    Text("\(option)")
+//                        .frame(width: 150, height: 150)
+//                        .background(.red)
+//                        .clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 20)))
+//                        .padding(10)
+//                }
+////                                Text("Click Me")
+//            }
+//        }
+//    }
+//}

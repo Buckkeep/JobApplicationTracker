@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C61DC5F52CCA2E550007DB47 /* JobApplications.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61DC5F42CCA2E550007DB47 /* JobApplications.swift */; };
+		C61DC5F52CCA2E550007DB47 /* JobApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61DC5F42CCA2E550007DB47 /* JobApplication.swift */; };
 		C61DC5F72CCA2F810007DB47 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61DC5F62CCA2F800007DB47 /* EditView.swift */; };
 		C61DC5F92CCA39670007DB47 /* EditView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61DC5F82CCA39670007DB47 /* EditView-ViewModel.swift */; };
 		C6F4AF9E2CC93CAC0026CE44 /* JobApplicationTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F4AF9D2CC93CAC0026CE44 /* JobApplicationTrackerApp.swift */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C61DC5F42CCA2E550007DB47 /* JobApplications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobApplications.swift; sourceTree = "<group>"; };
+		C61DC5F42CCA2E550007DB47 /* JobApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobApplication.swift; sourceTree = "<group>"; };
 		C61DC5F62CCA2F800007DB47 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		C61DC5F82CCA39670007DB47 /* EditView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditView-ViewModel.swift"; sourceTree = "<group>"; };
 		C6F4AF9A2CC93CAC0026CE44 /* JobApplicationTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobApplicationTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +64,7 @@
 				C6F4AF9D2CC93CAC0026CE44 /* JobApplicationTrackerApp.swift */,
 				C6F4AF9F2CC93CAC0026CE44 /* ContentView.swift */,
 				C6F4AFB12CC950840026CE44 /* GrowingButton.swift */,
-				C61DC5F42CCA2E550007DB47 /* JobApplications.swift */,
+				C61DC5F42CCA2E550007DB47 /* JobApplication.swift */,
 				C61DC5F82CCA39670007DB47 /* EditView-ViewModel.swift */,
 				C61DC5F62CCA2F800007DB47 /* EditView.swift */,
 				C6F4AFAF2CC9506F0026CE44 /* SettingsView.swift */,
@@ -153,7 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6F4AFB02CC9506F0026CE44 /* SettingsView.swift in Sources */,
-				C61DC5F52CCA2E550007DB47 /* JobApplications.swift in Sources */,
+				C61DC5F52CCA2E550007DB47 /* JobApplication.swift in Sources */,
 				C61DC5F72CCA2F810007DB47 /* EditView.swift in Sources */,
 				C61DC5F92CCA39670007DB47 /* EditView-ViewModel.swift in Sources */,
 				C6F4AFA02CC93CAC0026CE44 /* ContentView.swift in Sources */,

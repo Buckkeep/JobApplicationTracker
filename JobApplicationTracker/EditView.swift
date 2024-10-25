@@ -9,31 +9,29 @@ import SwiftUI
 
 struct EditView: View {
 
-//    @State private var statusOption: Status = .wishlist
-    
-    @State private var viewModel = ViewModel(status: .wishlist, company: "", jobTitle: "", location: "", salary: 0, listingURL: "", dateApplied: Date(), followedUp: false, notes: "")
+    @State private var jobApplication = JobApplication(status: .wishlist, company: "", jobTitle: "", location: "", salary: 0, listingURL: "", dateApplied: Date(), followedUp: false, notes: "")
     
     var body: some View {
         Form {
-            Picker("Status", selection: $viewModel.status) {
-                ForEach(EditView.ViewModel.Status.allCases) { option in
+            Picker("Status", selection: $jobApplication.status) {
+                ForEach(JobApplication.Status.allCases) { option in
                     Text(String(describing: option))
                 
                 }
             }
             .pickerStyle(.segmented)
-            TextField("Company", text: $viewModel.company)
-            TextField("Job Title", text: $viewModel.jobTitle)
-            TextField("Location", text:$viewModel.location)
-            TextField("Salary", value: $viewModel.salary, format: .currency(code: Locale.current.currency?.identifier ?? "GBP"))
+            TextField("Company", text: $jobApplication.company)
+            TextField("Job Title", text: $jobApplication.jobTitle)
+            TextField("Location", text:$jobApplication.location)
+            TextField("Salary", value: $jobApplication.salary, format: .currency(code: Locale.current.currency?.identifier ?? "GBP"))
                 .keyboardType(.numberPad)
-            TextField("Listing URL", text: $viewModel.listingURL)
+            TextField("Listing URL", text: $jobApplication.listingURL)
                 .keyboardType(.URL)
                 .textContentType(.URL)
-            DatePicker("Date Applied", selection: $viewModel.dateApplied, displayedComponents: .date)
-            Toggle("Followed up?", isOn: $viewModel.followedUp)
+            DatePicker("Date Applied", selection: $jobApplication.dateApplied, displayedComponents: .date)
+            Toggle("Followed up?", isOn: $jobApplication.followedUp)
             Section("Notes") {
-                TextField("Notes", text: $viewModel.notes, axis: .vertical)
+                TextField("Notes", text: $jobApplication.notes, axis: .vertical)
             }
         }
     }
