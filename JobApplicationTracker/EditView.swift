@@ -10,6 +10,7 @@ import SwiftUI
 struct EditView: View {
 
     @State private var jobApplication = JobApplication(status: .wishlist, company: "", jobTitle: "", location: "", salary: 0, listingURL: "", dateApplied: Date(), followedUp: false, notes: "")
+
     
     var body: some View {
         Form {
