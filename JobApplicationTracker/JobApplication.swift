@@ -9,8 +9,12 @@ import Foundation
 import SwiftData
 import SwiftUI
 
-@Observable
-class JobApplication {
+//@Observable
+struct JobApplication: Hashable, Equatable, Identifiable {
+    static func == (lhs: JobApplication, rhs: JobApplication) -> Bool {
+        lhs.id == rhs.id
+    }
+    
     enum Status: CaseIterable, Identifiable, CustomStringConvertible {
         var id: Self {self}
         
@@ -43,6 +47,7 @@ class JobApplication {
         }
     }
     
+    var id: String = UUID().uuidString
     var status: Status = .wishlist
     var company: String = ""
     var jobTitle: String = ""

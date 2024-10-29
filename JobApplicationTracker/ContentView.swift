@@ -12,8 +12,13 @@ struct ContentView: View {
     let columns = [
         GridItem(.adaptive(minimum: 150))
     ]
-    @State private var students = ["Harry", "Ron", "Hermione", "Draco", "Crabbe", "Goyle", "Pansy", "Parvati", "Padma"]
-    @State var isEditing: Bool = false
+    
+    @State private var jobApplications: [JobApplication] = [
+        JobApplication(status: .pending, company: "Bank 1", jobTitle: "Developer", location: "London", salary: 60000, listingURL: "https://www.bank1.com", dateApplied: Date(), followedUp: true, notes: "First interview"),
+        JobApplication(status: .denied, company: "Muppet Inc", jobTitle: "Muppet", location: "Sesame Street", salary: 45000, listingURL: "Website here", dateApplied: Date(), followedUp: true, notes: "Muppets!"),
+        JobApplication(status: .offer, company: "NatWest", jobTitle: "Engineer", location: "London", salary: 51000, listingURL: "www.natwest.com", dateApplied: Date(), followedUp: true, notes: "Woo hoo!"),
+        JobApplication(status: .wishlist, company: "Nintendo", jobTitle: "Pokemon Trainer", location: "Tokyo", salary: 70000, listingURL: "www.pokemon.com", dateApplied: Date(), followedUp: true, notes: "Gotta catch 'em all.")
+    ]
     
     var body: some View {
         NavigationStack {
@@ -38,11 +43,8 @@ struct ContentView: View {
                     }
                 }
                 .padding()
+                .background(Color(.lightGray))
                 
-                Spacer()
-                Rectangle()
-                    .frame(width: .infinity, height: 2)
-                    .foregroundStyle(.gray)
                 Section("Current applications") {
                     HStack {
                         EditButton()
@@ -50,12 +52,12 @@ struct ContentView: View {
                         Spacer()
                     }
                     List {
-                        ForEach(students, id: \.self) { student in
-                            Text(student)
+                        ForEach(jobApplications) { jobApplication in 
+                            ListRowView(jobApplication: jobApplication)
                         }
                         .onDelete(perform: delete)
                         .onMove(perform: { indices, newOffset in
-                            students.move(fromOffsets: indices, toOffset: newOffset)
+                            jobApplications.move(fromOffsets: indices, toOffset: newOffset)
                         })
                     }
                 }
@@ -83,10 +85,12 @@ struct ContentView: View {
     }
     
     func delete(indexSet: IndexSet) {
-        students.remove(atOffsets: indexSet)
+        jobApplications.remove(atOffsets: indexSet)
     }
 }
 
 #Preview {
     ContentView()
 }
+
+

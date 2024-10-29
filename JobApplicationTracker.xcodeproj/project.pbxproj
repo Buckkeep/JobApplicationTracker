@@ -10,6 +10,7 @@
 		C61DC5F52CCA2E550007DB47 /* JobApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61DC5F42CCA2E550007DB47 /* JobApplication.swift */; };
 		C61DC5F72CCA2F810007DB47 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61DC5F62CCA2F800007DB47 /* EditView.swift */; };
 		C61DC5F92CCA39670007DB47 /* EditView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61DC5F82CCA39670007DB47 /* EditView-ViewModel.swift */; };
+		C61DC5FB2CD131230007DB47 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61DC5FA2CD131230007DB47 /* ListRowView.swift */; };
 		C6F4AF9E2CC93CAC0026CE44 /* JobApplicationTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F4AF9D2CC93CAC0026CE44 /* JobApplicationTrackerApp.swift */; };
 		C6F4AFA02CC93CAC0026CE44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F4AF9F2CC93CAC0026CE44 /* ContentView.swift */; };
 		C6F4AFA22CC93CAE0026CE44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6F4AFA12CC93CAE0026CE44 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		C61DC5F42CCA2E550007DB47 /* JobApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobApplication.swift; sourceTree = "<group>"; };
 		C61DC5F62CCA2F800007DB47 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		C61DC5F82CCA39670007DB47 /* EditView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditView-ViewModel.swift"; sourceTree = "<group>"; };
+		C61DC5FA2CD131230007DB47 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		C6F4AF9A2CC93CAC0026CE44 /* JobApplicationTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobApplicationTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F4AF9D2CC93CAC0026CE44 /* JobApplicationTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobApplicationTrackerApp.swift; sourceTree = "<group>"; };
 		C6F4AF9F2CC93CAC0026CE44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 		C6F4AF912CC93CAC0026CE44 = {
 			isa = PBXGroup;
 			children = (
+				C61DC5FA2CD131230007DB47 /* ListRowView.swift */,
 				C6F4AF9C2CC93CAC0026CE44 /* JobApplicationTracker */,
 				C6F4AF9B2CC93CAC0026CE44 /* Products */,
 			);
@@ -155,6 +158,7 @@
 				C6F4AFB02CC9506F0026CE44 /* SettingsView.swift in Sources */,
 				C61DC5F52CCA2E550007DB47 /* JobApplication.swift in Sources */,
 				C61DC5F72CCA2F810007DB47 /* EditView.swift in Sources */,
+				C61DC5FB2CD131230007DB47 /* ListRowView.swift in Sources */,
 				C61DC5F92CCA39670007DB47 /* EditView-ViewModel.swift in Sources */,
 				C6F4AFA02CC93CAC0026CE44 /* ContentView.swift in Sources */,
 				C6F4AF9E2CC93CAC0026CE44 /* JobApplicationTrackerApp.swift in Sources */,
