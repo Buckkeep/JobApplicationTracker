@@ -21,6 +21,7 @@ struct ListRowView: View {
         HStack {
             VStack(alignment: .leading) {
                 Text(jobApplication.company)
+                    .font(.title2)
                 Text(jobApplication.status.description)
             }
             Spacer()

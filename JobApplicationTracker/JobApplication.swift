@@ -9,7 +9,6 @@ import Foundation
 import SwiftData
 import SwiftUI
 
-//@Observable
 struct JobApplication: Hashable, Equatable, Identifiable {
     static func == (lhs: JobApplication, rhs: JobApplication) -> Bool {
         lhs.id == rhs.id

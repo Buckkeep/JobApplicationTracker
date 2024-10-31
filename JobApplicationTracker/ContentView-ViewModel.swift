@@ -13,7 +13,7 @@ extension ContentView {
         var jobApplications: [JobApplication] = []
         
         init() {
-            
+            getItems()
         }
         
         func getItems() {
